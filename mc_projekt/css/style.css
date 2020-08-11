@@ -1,0 +1,324 @@
+/*
+    Tato šablona je veřejná. Její obsah můžete veřejně používat, upravovat a prodávat. 
+    Prosíme vás ale o zachování informace o autorovi v hlavičce.
+*/
+/* 
+    Created on : 18.7.2015, 12:18:25
+    Author     : Martin Kobelka
+*/
+/*
+    Informace týkající se celého dokumentu
+*/
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+.dokoncitObtekani{
+    clear: both;
+}
+/*
+    Informace týkající se hlavičky
+*/
+header{
+    background: #5E412F;    
+}
+header img{
+    margin: 1em;
+}
+header img, header #nazevStranky{
+    float: left;
+    text-decoration: none;
+}
+header #nazevStranky{
+    color: white;
+    font-size: 4em;
+    margin-top: 0.7em;
+    text-decoration: none;
+}
+@media screen and (min-width: 790px) {
+    #menuNadpis{
+        visibility: hidden;
+    }
+    header ul{
+        float: right;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;    
+    }
+    header ul li{
+        float: left;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 3.5em;
+    }
+    header ul li a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    header ul li a:hover{
+        border-bottom: 3px solid white;
+    }
+}
+@media screen and (max-width: 790px){
+    #menuNadpis{
+        display: block;
+        width: 100%;
+        clear: both;
+        text-align: center;
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    header ul{        
+        clear: both;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }    
+    header ul li a{ 
+        display: block;
+        text-align: center;        
+        background-color: #836552;
+        text-decoration: none;
+        color: white;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+     header ul li a:hover{ 
+        background-color: #5E412F;        
+    }
+    
+}
+
+/*
+    Informace týkající se obsahu
+*/
+@media screen and (min-width: 790px){
+    section h1, h2{
+        text-align: center;
+        margin-top: 3.5em;
+        margin-bottom: 4em;
+        font-size: 2.5em;
+        font-family: 'Oswald', sans-serif;
+        text-shadow: 4px 4px 4px #999999;
+    }
+    section h2{
+        margin-bottom: 2em;
+    }
+    #platformy{
+        width: 50em;    
+        margin: 0 auto;
+    }
+    #platformy li{
+        float: left;  
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+@media screen and (max-width: 790px){
+    section h1, h2{
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 2em;
+       font-family: 'Oswald', sans-serif;
+        text-shadow: 4px 4px 4px #cccccc;
+    }
+    section h2{
+        margin-bottom: 2em;
+    }
+    #platformy{
+        width: 16em;    
+        margin: 0 auto;
+    }
+    #platformy li{
+        float: left;  
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-bottom: 2em;
+    }
+    
+}
+#platformy ul{    
+    list-style-type: none;
+    margin: 0;    
+    padding: 0;
+    display: block;
+    
+}
+#platformy li img{
+    float: left;
+    width: 45px;
+}
+#appleIconObchod{
+    position: relative; 
+    bottom: 25px;
+}
+#androidIconObchod{
+    position: relative; 
+    bottom: 17px;    
+}
+#WPIconObchod{
+    position: relative; 
+    bottom: 6px;    
+}
+#platformy li a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background: #5E412F;
+    display: block;
+    padding: 2em;    
+    border-radius: 50px;
+    width: 10em;   
+    font-weight: bold;
+    border: 3px solid black;
+}
+
+@media screen and (min-width: 790px){
+    #textPodpora{
+        max-width: 400px;
+        margin: 0 auto;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 2em;
+        padding-right: 7em;
+        padding-bottom: 2em;
+        background-image: url(../images/pozadiPodpora.png);   
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    #textKFormulari{
+        max-width: 670px;
+        margin: 0 auto;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 2em;    
+
+    }
+}
+@media screen and (max-width: 790px){
+    #textPodpora{
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 2em;         
+        padding-bottom: 1em; 
+        text-align: justify; 
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    #textKFormulari{
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 2em; 
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        text-align: justify;
+
+    }
+}
+
+/*
+    Styly pro formulář
+*/
+fieldset{
+    border: none;
+}
+@media screen and (min-width: 790px){
+    input[type="text"],
+    input[type="submit"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea,
+    select {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid #5E412F;
+      font-size: 16px;
+      height: auto;
+      margin: 0;
+      outline: 0;
+      padding: 15px;
+      width: 100%;
+      background-color: #e8eeef;
+      color: black;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+      margin-bottom: 30px;
+      width: 400px;
+    }
+    textarea{
+        width: 600px;
+    }
+    input[type="submit"]{
+        color: black;
+        width: 400px;    
+    }
+    label{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 1.5em;
+    }   
+    form{
+        width: 670px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 790px){
+    form{
+        width: 100%;
+    }
+    input[type="text"],
+    input[type="submit"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea,
+    select {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid #5E412F;
+      font-size: 16px;
+      height: auto;
+      margin: 0;
+      outline: 0;
+      padding: 15px;
+      width: 100%;
+      background-color: #e8eeef;
+      color: black;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+      margin-bottom: 30px;
+      width: 90%;
+    }
+    textarea{
+        width: 90%;
+    }
+    input[type="submit"]{
+        color: black;
+        width: 90%;    
+    }
+    label{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 1.5em;
+    }
+}
